@@ -31,3 +31,18 @@
     text-align: right;
     color: white;
 }
+
+div.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+
+}
+
+button{
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 25%;
+    background-color: azure;
+    color: red;
+}
