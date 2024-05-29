@@ -24,6 +24,9 @@
                         </p>
                     </div>
                 </div>
+                <div v-for="(slide, index) in slides" :class="{ active: index === activeIndex }" @click="activeIndex = index" class="flex">
+                    <img :src="slides[index].image" alt="thumbnail" id="thumbnail" />
+                </div>
                 <div class="buttons">
                     <button @click = "avanti">Avanti</button>
                     <button @click = "indietro">indietro</button>
