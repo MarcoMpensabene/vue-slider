@@ -30,11 +30,11 @@ const { createApp } = Vue
                     }
                 },
                 methods: {
-                avanti(){
+                up(){
                     console.log("test")
                     this.activeIndex = (this.activeIndex - 1 + this.slides.length) % this.slides.length
                 },
-                indietro(){
+                down(){
                     this.activeIndex = (this.activeIndex + 1) % this.slides.length
                 },
             },
